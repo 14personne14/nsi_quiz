@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Quiz - Architecture</title>
+        
+        <!-- importation css -->
+        <link rel="stylesheet" href="../css/pageQuiz.css"/>
+        
+        <!-- importation javascript -->
+        <script src="../javascript/architecture.js"></script>
+        
+    </head>
+    
+    <body>
+        <!-- Titre du quiz puis explication de ce que nous avons vu en cours -->
+        <h1><a href="../index.html"> Quiz </a></h1>
+        <h2> Architecture : </h2>
+        
+        <div class="txt_explication">
+            <h3>Résumé...</h3>
+            <p>En <b>NSI</b>, nous avons étudié le thème <i>"Architecture matérielles et système d'exploitation"</i>. Dans ce thème, il y avait plusieurs éléments :</p>
+            <ul class="list_explication">
+                <li>
+                    &#9830; Les rôles (et les caractéristiques) des différents composants d'une machine. <br> (<i>ex:</i> RAM, processeur, CPU, ... )
+                </li>
+                    &#9830; Comment la machine exécute une séquence d'instructions simples (avec le language assembleur). 
+                <li>
+                    &#9830; Qu'est ce qu'un système d'exploitation et à quoi cela sert-il ?
+                </li>
+            </ul>
+        </div> 
+        
+        <!-- Liste des 6 questions -->
+        <form>
+            <fieldset id="fieldset1">
+                <legend>Question 1</legend>
+                <p class="question">Laquelle des mémoires suivantes est volatile ?</p>
+                <input name="rep1" type="radio"> RAM <br> 
+                <input name="rep1" type="radio"> Disque dur <br> 
+                <input name="rep1" type="radio"> ROM <br> 
+                <input name="rep1" type="radio"> Clé USB <br> 
+            </fieldset>
+                
+            <fieldset id="fieldset2">
+                <legend>Question 2</legend>
+                <p class="question">Dans l'architecture générale de Von Neumann, la partie qui a pour rôle d'effectuer les opérations de base est : </p>
+                <input name="rep2" type="radio"> L'unité de contrôle <br> 
+                <input name="rep2" type="radio"> La mémoire <br> 
+                <input name="rep2" type="radio"> L'unité arithmmétique et logique <br> 
+                <input name="rep2" type="radio"> Les dispositifs d'entrée-sortie <br> 
+            </fieldset>
+            
+             <fieldset id="fieldset3">
+                <legend>Question 3</legend>
+                <p class="question">La mémoire RAM : </p>
+                <input name="rep3" type="radio"> Ne fonctionne qu'en mode lecture <br> 
+                <input name="rep3" type="radio"> Conserve les données en cas de coupure de l'alimentation <br> 
+                <input name="rep3" type="radio"> Ne fonctionne qu'en mode écriture <br> 
+                <input name="rep3" type="radio"> Perd les données en cas de coupure de l'alimentation <br> 
+            </fieldset>
+            
+             <fieldset id="fieldset4">
+                <legend>Question 4</legend>
+                <p class="question">La lumière à la fin de la simulation ci-dessous est </p>
+                <img src="../images/quiz_architecture_question_4.png" height="200" alt="Image-quiz"><br>
+                <input name="rep4" type="radio"> Allumé <br> 
+                <input name="rep4" type="radio"> Eteinte <br> 
+                <input name="rep4" type="radio"> De valeur 0 <br> 
+                <input name="rep4" type="radio"> Il y a une erreur <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset5">
+                <legend>Question 5</legend>
+                <p class="question">Que fait le code assembleur suivant ? </p>
+                <pre><code>ADD R2, R0, R1 </code></pre>
+                <input name="rep5" type="radio"> Il additionne la valeur stokée dans le registre R0 et la valeur stokée dans le registre R2 puis, place le résultat dans le registre R1 <br> 
+                <input name="rep5" type="radio"> Il additionne la valeur stokée dans le registre R2 et la valeur stokée dans le registre R0 puis, place le résultat dans le registre R1 <br> 
+                <input name="rep5" type="radio"> Il additionne la valeur stokée dans le registre R0 et la valeur stokée dans le registre R1 puis, place le résultat dans le registre R2 <br> 
+                <input name="rep5" type="radio"> Il additionne la valeur stokée dans le registre R2 et la valeur stokée dans le registre R1 puis, place le résultat dans le registre R0 <br> 
+            </fieldset>
+            
+             <fieldset id="fieldset6">
+                <legend>Question 6</legend>
+                <p class="question">Quel composant d'un ordinateur a pour rôle principal de connecter les différents composants de l'ordinateur ? </p>
+                <input name="rep6" type="radio"> La RAM <br> 
+                <input name="rep6" type="radio"> La carte mère <br> 
+                <input name="rep6" type="radio"> Le CPU <br> 
+                <input name="rep6" type="radio"> Le disque dur <br> 
+            </fieldset>
+            
+            <div class="center">
+                <input type="button" class="button" value="Vérifier mes réponses" onclick="quiz_verification();">
+            </div>
+        </form>
+        
+        <footer>
+            &#169; Eloi Lagrange | &#169; Antoine Corria
+        </footer>
+        
+    </body>
+    
+</html>

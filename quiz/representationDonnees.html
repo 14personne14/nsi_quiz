@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Quiz - Représentation des données</title>
+        
+        <!-- importation css -->
+        <link rel="stylesheet" href="../css/pageQuiz.css"/>
+        
+        <!-- importation javascript -->
+        <script src="../javascript/representationDonnees.js"></script>
+        
+    </head>
+    
+    <body>
+        <!-- Titre du quiz puis explication de ce que nous avons vu en cours -->
+        <h1><a href="../index.html"> Quiz </a></h1>
+        <h2> Représentation des données : </h2>
+        
+        <div class="txt_explication">
+            <h3>Résumé...</h3>
+            <p>En <b>NSI</b>, nous avons étudié le thème <i>"Représentation des données"</i>. Dans ce thème, il y avait plusieurs éléments :</p>
+            <ul class="list_explication">
+                <li>
+                    &#9830; La représentation des entiers positifs en base 2, 10 et 16 
+                </li>
+                    &#9830; La représentation des textes en ASCII, Unicode et UTF-8  
+                <li>
+                    &#9830; La représentation des entiers relatifs en base 2, 10 et 16 
+                </li>
+            </ul>
+        </div> 
+        
+        <!-- Liste des 6 questions -->
+        <form>
+            <fieldset id="fieldset1">
+                <legend>Question 1</legend>
+                <p class="question">Qu'est ce qu'un octet ?</p>
+                <input name="rep1" type="radio"> Un débit se mesurant en bit/secondes <br> 
+                <input name="rep1" type="radio"> Un groupe de 8 bits <br> 
+                <input name="rep1" type="radio"> Un nombre entier <br> 
+                <input name="rep1" type="radio"> Un débit se mesurant en Mbit/seconde <br> 
+            </fieldset>
+                
+            <fieldset id="fieldset2">
+                <legend>Question 2</legend>
+                <p class="question">Combien de caractère comporte le code ASCII ?</p>
+                <input name="rep2" type="radio"> 255 caractères <br> 
+                <input name="rep2" type="radio"> 55 caractères <br> 
+                <input name="rep2" type="radio"> 666 caractères <br> 
+                <input name="rep2" type="radio"> 127 caractères <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset3">
+                <legend>Question 3</legend>
+                <p class="question">Comment s'écrit en hexadecimal le nombre dont l'écriture binaire est 0010 1100 ?</p>
+                <input name="rep3" type="radio"> 1C <br> 
+                <input name="rep3" type="radio"> 2C <br> 
+                <input name="rep3" type="radio"> 3C <br> 
+                <input name="rep3" type="radio"> 1B <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset4">
+                <legend>Question 4</legend>
+                <p class="question">Laquelle des écritures binaires est un nombre entier positif et pair ?</p>
+                <input name="rep4" type="radio"> 10 0010 <br> 
+                <input name="rep4" type="radio"> 10 0001 <br> 
+                <input name="rep4" type="radio"> 11 0001 <br> 
+                <input name="rep4" type="radio"> 11 1111 <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset5">
+                <legend>Question 5</legend>
+                <p class="question">Le nombre 1,75 s'écrit en binaire : </p>
+                <input name="rep5" type="radio"> 1.010 <br> 
+                <input name="rep5" type="radio"> 1.011 <br> 
+                <input name="rep5" type="radio"> 1.110 <br> 
+                <input name="rep5" type="radio"> 1.111 <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset6">
+                <legend>Question 6</legend>
+                <p class="question">Parmi les quatre nombres, lequel a une représentation exacte en binaire ? </p>
+                <input name="rep6" type="radio"> 1/3 <br> 
+                <input name="rep6" type="radio"> 0.1 <br> 
+                <input name="rep6" type="radio"> 0.3 <br> 
+                <input name="rep6" type="radio"> 0.5 <br> 
+            </fieldset>
+            
+            <div class="center">
+                <input type="button" class="button" value="Vérifier mes réponses" onclick="quiz_verification();">
+            </div>
+        </form>
+        
+        <footer>
+            &#169; Eloi Lagrange | &#169; Antoine Corria
+        </footer>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Quiz - Le web</title>
+        
+        <!-- importation du css -->
+        <link rel="stylesheet" href="../css/pageQuiz.css"/>
+        
+        <!-- importation du javascript -->
+        <script src="../javascript/web.js"></script>
+        
+    </head>
+    
+    <body>
+        <!-- Titre du quiz puis explication de ce que nous avons vu en cours -->
+        <h1><a href="../index.html"> Quiz </a></h1>
+        <h2> Le web : </h2>
+        
+        <div class="txt_explication">
+            <h3>Résumé...</h3>
+            <p>En <b>NSI</b>, nous avons étudié le thème <i>"Interaction entre l'homme et la machine sur le Web"</i>. Dans ce thème, il y avait plusieurs éléments :</p>
+            <ul class="list_explication">
+                <li>
+                    &#9830; Comment le web fonctionne t'il (<i>ex:</i> requête HTTP, adresse IP) ?
+                </li>
+                    &#9830; L'URL avec le nom de domaine et les chemins absolu et relatif !
+                <li>
+                    &#9830; La programation en HTLM, CSS et JavaScript 
+                </li>
+            </ul>
+        </div> 
+        
+        <!-- Liste des 6 questions -->
+        <form>
+            <fieldset id="fieldset1">
+                <legend>Question 1</legend>
+                <p class="question">Comment se nomme la partie en gras du lien ci-dessous ?</p>
+                <pre><code> https://<b>www.google.com</b>/help/ </code></pre>
+                <input name="rep1" type="radio"> Chemin <br>
+                <input name="rep1" type="radio"> Sous domaine <br> 
+                <input name="rep1" type="radio"> Nom de domaine <br> 
+                <input name="rep1" type="radio"> Protocole <br> 
+            </fieldset>
+                
+            <fieldset id="fieldset2">
+                <legend>Question 2</legend>
+                <p class="question">Quel est le chemin absolu du fichier "fichier7.odp" ?</p>
+                <img src="../images/quiz_web_question_2.png" height="200" alt="Image-quiz"><br>
+                <input name="rep2" type="radio"> racine/dossier1/fichier7.odp <br> 
+                <input name="rep2" type="radio"> racine/dossier2/dossier3/fichier7.odp <br> 
+                <input name="rep2" type="radio"> racine/dossier4/dossier5/fichier7.odp <br> 
+                <input name="rep2" type="radio"> racine/dossier2/dossier4/fichier7.odp <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset3">
+                <legend>Question 3</legend>
+                <p class="question">Quel est l'adresse ip (ipv4) du site www.google.com ?</p>
+                <input name="rep3" type="radio"> 216.58.213.174 <br> 
+                <input name="rep3" type="radio"> 192.168.1.14 <br> 
+                <input name="rep3" type="radio"> 249.124.75.5 <br> 
+                <input name="rep3" type="radio"> 75.20.90.264 <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset4">
+                <legend>Question 4</legend>
+                <p class="question">Dans le code HTML, les délimiteurs tels que &lt;body> et &lt;/body> s'appellent ? </p>
+                <input name="rep4" type="radio"> des bornes <br> 
+                <input name="rep4" type="radio"> des balises <br> 
+                <input name="rep4" type="radio"> des paragraphes <br> 
+                <input name="rep4" type="radio"> des liens <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset5">
+                <legend>Question 5</legend>
+                <p class="question">Quelle est la fonction principale d'un fichier CSS ? </p>
+                <input name="rep5" type="radio"> Définir le style d'une page web <br> 
+                <input name="rep5" type="radio"> Assurer l'interaction entre une page web et l'utilisateur <br> 
+                <input name="rep5" type="radio"> Créer une page web dynamique <br>
+                <input name="rep5" type="radio"> Créer un bouton dans une page web <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset6">
+                <legend>Question 6</legend>
+                <p class="question">Quelle est la balise HTML utilisée pour indiquer un titre de niveau d'importance maximal ? </p>
+                <input name="rep6" type="radio"> la balise &lt;header&#62; <br> 
+                <input name="rep6" type="radio"> la balise &lt;head&#62; <br> 
+                <input name="rep6" type="radio"> la balise &lt;h0&#62; <br>
+                <input name="rep6" type="radio"> la balise &lt;h1&#62; <br> 
+            </fieldset>
+            
+            <input type="button" class="button" value="Vérifier mes réponses" onclick="quiz_verification();">
+        </form>
+        
+        <footer>
+            &#169; Eloi Lagrange | &#169; Antoine Corria
+        </footer>
+        
+    </body>
+    
+</html>

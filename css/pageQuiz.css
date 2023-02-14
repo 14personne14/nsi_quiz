@@ -1,0 +1,100 @@
+/* CSS des pages de quiz */
+
+body {
+    background-image: url("../images/background_quiz.jpg"); 
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    color: #fcff00; 
+    font-family: Arial Narrow, sans-serif; 
+    font-size: 50px; 
+    text-align: center; 
+    margin: auto; 
+    padding: 23px 5px 23px 5px; 
+    border-style: solid; 
+}
+
+a {
+    outline: none;
+    color: #fcff00; 
+    text-decoration: none;
+}
+
+h2 {
+    font-family: Impact, fantasy; 
+    font-size: 50px; 
+    text-align: center; 
+    text-decoration: underline;
+    color: #FFFFFF; 
+    letter-spacing: 0.1em; 
+}
+
+.txt_explication {      /* CSS pour les "class" avec un point devant : */
+    /*background-color: #03fcd3; */
+    background: linear-gradient(#121eff, #69beff);
+    text-align: center; 
+    margin: 0px; 
+    padding: 5px;
+}
+
+.txt_explication p {
+    font-family: 'Times New Roman', serif;
+    padding: 0px;
+    font-size: 17px; 
+}
+
+.txt_explication h3 {
+    font-family: Arial, sans-serif;
+    text-decoration: underline;
+    padding: 0px;
+    font-size: 20px; 
+}
+
+.list_explication {
+    list-style-type: none;
+}
+
+fieldset {
+    margin: 20px; 
+    background-color: #adadad; 
+}
+
+legend {
+    background-color: #000000;
+    color: #FFFFFF; 
+    padding: 2px 30px;
+    font-size: 20px; 
+}
+
+.question {
+    font-family: 'Brush Script MT', cursive;
+    margin: auto; 
+    font-size: 30px; 
+}
+
+.button {
+    background-color: #020063; 
+    border: 2px solid;
+    border-color: #FFFFFF;
+    border-radius: 10px; 
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 32px;
+    margin: 10px 70px;
+}
+
+code {
+    font-size: 15px;
+    font-family: "Courier";
+    margin: 10px; 
+}
+
+footer {
+    text-align: right; 
+    font-family: Courier New, cursive; 
+    color: #FFFFFF; 
+}

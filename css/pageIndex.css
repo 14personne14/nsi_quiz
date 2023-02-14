@@ -1,0 +1,55 @@
+/* CSS de la page index */
+
+body {
+    background-color: #000000;
+    background-image: url("../images/background_index.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: Brush Script MT, cursive; 
+    color: #FFFFFF; 
+    font-size: 50px; 
+    text-align: center; 
+}
+
+img {
+    /* Centrer l'image : */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 30px; 
+    text-align: center; 
+}
+
+li {
+    margin: 30px; 
+    padding: 23px 5px 23px 5px; 
+    background: rgb(255,0,0);
+    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+a {
+    font-family: Courier New, cursive; 
+    font-size: 25px; 
+    outline: none;
+    text-decoration: none;
+    color: #000000; 
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+footer {
+    text-align: right; 
+    font-family: Courier New, cursive; 
+    color: #FFFFFF; 
+}

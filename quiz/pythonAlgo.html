@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Quiz - Algorithme python</title>
+        
+        <!-- importation css -->
+        <link rel="stylesheet" href="../css/pageQuiz.css"/>
+        
+        <!-- importation javascript -->
+        <script src="../javascript/pythonAlgo.js"></script>
+        
+    </head>
+    
+    <body>
+        <!-- Titre du quiz puis explication de ce que nous avons vu en cours -->
+        <h1><a href="../index.html"> Quiz </a></h1>
+        <h2> Algorithme python : </h2>
+        
+        <div class="txt_explication">
+            <h3>Résumé...</h3>
+            <p>En <b>NSI</b>, nous avons étudié le thème <i>"Programmation en Python"</i>. Dans ce thème, il y avait plusieurs éléments :</p>
+            <ul class="list_explication">
+                <li>
+                    &#9830; Les bases en Python (<i>ex:</i> listes, tuples, modules, chaines de caractères, fonctions, ...) 
+                </li>
+                    &#9830; Quels sont les algorithmes de tris par insertion et par sélection ?
+                <li>
+                    &#9830; Comment fonctionnent les booléens et les expressions booléennes ?
+                </li>
+            </ul>
+        </div> 
+        
+        <!-- Liste des 6 questions -->
+        <form>
+            <fieldset id="fieldset1">
+                <legend>Question 1</legend>
+                <p class="question">Quelle est la valeur de la variable r à la fin de l'execution du script suivant ?</p>
+                <pre><code>t&#61;(10,6,1,12,15) 
+ r&#61;t[3] - t[1] <br></code></pre>
+                <input name="rep1" type="radio"> -9 <br> 
+                <input name="rep1" type="radio"> 2 <br> 
+                <input name="rep1" type="radio"> 3 <br> 
+                <input name="rep1" type="radio"> 6 <br> 
+            </fieldset>
+                
+            <fieldset id="fieldset2">
+                <legend>Question 2</legend>
+                <p class="question">Que vaut i à la fin des instructions suivantes si n=100 ?</p>
+                <pre><code>i&#61;2 
+ while i &#60;&#61; n: 
+     i= 2*i </code></pre>
+                <input name="rep2" type="radio"> 0 <br> 
+                <input name="rep2" type="radio"> 64 <br> 
+                <input name="rep2" type="radio"> 100 <br> 
+                <input name="rep2" type="radio"> 128 <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset3">
+                <legend>Question 3</legend>
+                <p class="question">Quelle est la valeur de la variable b à la fin de l'éxécution du script suivant ?</p>
+                <pre><code>a &#61; 2 
+ b &#61; 5 
+ if a &#62; 8: 
+     b&#61;10 
+ elif a &#62; 6: 
+     b&#61;3 </code></pre>
+                <input name="rep3" type="radio"> 3 <br> 
+                <input name="rep3" type="radio"> 5 <br> 
+                <input name="rep3" type="radio"> 6 <br> 
+                <input name="rep3" type="radio"> 10 <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset4">
+                <legend>Question 4</legend>
+                <p class="question">A quoi sert le mot-clé def en python ? </p>
+                <input name="rep4" type="radio"> Cela importe une fonction <br> 
+                <input name="rep4" type="radio"> Cela exécute une fonction <br> 
+                <input name="rep4" type="radio"> Cela créé une fonction <br> 
+                <input name="rep4" type="radio"> Cela vérifie si une fonction éxiste <br> 
+            </fieldset>
+            
+            <fieldset id="fieldset5">
+                <legend>Question 5</legend>
+                <p class="question">Comment créer une variable <b> a </b> contenant <b>vrai</b> en python ? </p>
+                <input name="rep5" type="radio"> a&#61;true <br> 
+                <input name="rep5" type="radio"> a&#61;vrai <br> 
+                <input name="rep5" type="radio"> a&#61;True <br> 
+                <input name="rep5" type="radio"> a&#61;Vrai <br> 
+            </fieldset>
+             
+            <fieldset id="fieldset6">
+                <legend>Question 6</legend>
+                <p class="question"> Laquelle des propositions suivantes n'est <u>pas</u> une chaîne de caractères : </p>
+                <input name="rep6" type="radio"> a&#61;"coucou' <br> 
+                <input name="rep6" type="radio"> a&#61;"pAsTeQuE" <br> 
+                <input name="rep6" type="radio"> a&#61;'bonjour' <br> 
+                <input name="rep6" type="radio"> a&#61;"12.3" <br> 
+            </fieldset>
+            
+            <div class="center">
+                <input type="button" class="button" value="Vérifier mes réponses" onclick="quiz_verification();">
+            </div>
+        </form>
+        
+        <footer>
+            &#169; Eloi Lagrange | &#169; Antoine Corria
+        </footer>
+        
+    </body>
+    
+</html>
